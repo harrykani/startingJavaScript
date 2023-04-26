@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Arial';
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    background-color: #373741;
+    padding: 15px;
+    width: 50%;
+    border-radius: 0 0 5px 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons {
+    text-transform: uppercase;
+    padding: 2%;
+    border-radius: 20%;
+    font-size: large;
+    background-color: #222;
+}
+
+.btn1 {
+    font-family: monospace;
+}
+
+.btn2 {
+    font-family: 'Franklin Gothic Medium';
+}
+
+.btn3 {
+    font-family: 'Times New Roman';
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.text {
+    margin-top: 5%;
+    overflow: hidden;
+    padding: 2%;
+    width: 50%;
+}
+
