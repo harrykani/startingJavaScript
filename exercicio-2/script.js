@@ -1,18 +1,20 @@
 const input = document.querySelector('.input');
-const faixaEtaria = document.querySelector('.faixa-etaria');
+const grupoEtario = document.querySelector('.grupo-etario');
 const response = document.querySelector('.response')
 const form = document.querySelector('.form');
 
 
 form.addEventListener('submit', (event) => {
     event.preventDefault(); 
-    const idade = parseInt(input.value);
-    faixaEtaria.textContent = getAgeGroup(idade);
+    const idade = Number(input.value);
+    grupoEtario.textContent = getAgeGroup(idade);
     response.style.display = 'block';
   });
   
   function getAgeGroup(idade) {
-    if (idade >= 90 && idade < 120) {
+    if (idade >= 1000) {
+      return 'Imortal';
+    } else if (idade >= 90 && idade < 120) {
       return 'Ente';
     } else if (idade >= 75 && idade < 90) {
       return 'Ancião';
